@@ -1,0 +1,13 @@
+{
+  "name": "rickandmortycharactersfinder",
+  "version": "1.0.0",
+  "description": "Rick And Morty Characters Finder",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://mantasjuod.github.io/charactersfinder"
+}

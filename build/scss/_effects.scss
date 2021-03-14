@@ -1,0 +1,86 @@
+// Border glow
+.c-border-glow-green {
+  animation: glowEffectGreen 1s linear infinite;
+}
+.c-border-glow-red {
+  animation: glowEffectRed 1s linear infinite;
+}
+.c-border-glow-grey {
+  animation: glowEffectGrey 1s linear infinite;
+}
+
+// Key frames
+@keyframes glowEffectGreen {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00bd2f, 0 0 10px #00bd2f,
+      0 0 15px #00bd2f, 0 0 10px #00bd2f, 0 0 35px #00bd2f;
+  }
+  50% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00bd2f, 0 0 20px #00bd2f,
+      0 0 20px #00bd2f, 0 0 20px #00bd2f, 0 0 55px #00bd2f;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00bd2f, 0 0 10px #00bd2f,
+      0 0 15px #00bd2f, 0 0 10px #00bd2f, 0 0 35px #00bd2f;
+  }
+}
+@keyframes glowEffectRed {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #d61f1f, 0 0 10px #d61f1f,
+      0 0 15px #d61f1f, 0 0 10px #d61f1f, 0 0 35px #d61f1f;
+  }
+  50% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #d61f1f, 0 0 20px #d61f1f,
+      0 0 20px #d61f1f, 0 0 20px #d61f1f, 0 0 55px #d61f1f;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #d61f1f, 0 0 10px #d61f1f,
+      0 0 15px #d61f1f, 0 0 10px #d61f1f, 0 0 35px #d61f1f;
+  }
+}
+@keyframes glowEffectGrey {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8d8d8d, 0 0 10px #8d8d8d,
+      0 0 15px #8d8d8d, 0 0 10px #8d8d8d, 0 0 35px #8d8d8d;
+  }
+  50% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8d8d8d, 0 0 20px #8d8d8d,
+      0 0 20px #8d8d8d, 0 0 20px #8d8d8d, 0 0 55px #8d8d8d;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8d8d8d, 0 0 10px #8d8d8d,
+      0 0 15px #8d8d8d, 0 0 10px #8d8d8d, 0 0 35px #8d8d8d;
+  }
+}
+
+// Colors for health status
+.statusAlive {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00bd2f, 0 0 30px #00bd2f,
+    0 0 40px #00bd2f, 0 0 55px #00bd2f, 0 0 75px #00bd2f;
+}
+.statusDead {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px #d61f1f, 0 0 20px #d61f1f,
+    0 0 25px #d61f1f, 0 0 25px #d61f1f, 0 0 75px #d61f1f;
+}
+.statusUnknown {
+  text-shadow: 0 0 5px #8d8d8d, 0 0 10px #fff, 0 0 20px #8d8d8d,
+    0 0 30px #8d8d8d, 0 0 40px #8d8d8d, 0 0 55px #8d8d8d, 0 0 75px #8d8d8d;
+}
+
+// Text blink
+// Initialzing text blink
+.text-blink {
+  animation: blink 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

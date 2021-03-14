@@ -1,0 +1,575 @@
+/// Mobile screen
+@media (max-width: 1199.98px) {
+  // Search container
+  #search-container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    .page-name {
+      order: 1;
+      margin-top: 40px;
+    }
+    .allSearchForm {
+      order: 2;
+    }
+    .filterForm {
+      order: 2;
+      white-space: normal;
+      margin-top: 35px !important;
+      h5 {
+        margin-top: -110px !important;
+      }
+    }
+  }
+  // Searching database, [not found] text
+  #apiPreload {
+    h3 {
+      font-size: 30px !important;
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  // Main page name
+  .page-name {
+    font-size: 44px !important;
+  }
+  // Search database, [not found] text
+  #apiPreload {
+    h3 {
+      font-size: 30px !important;
+    }
+  }
+  // Search container
+  #search-container {
+    .page-name {
+      h3 {
+        font-size: 40px !important;
+      }
+    }
+    .allSearchForm {
+      margin-bottom: 0 !important;
+      label {
+        font-size: 22px !important;
+      }
+      #nameInput,
+      #submitBtn {
+        font-size: 18px !important;
+      }
+      .searchedForText {
+        font-size: 18px !important;
+        margin-top: -7px !important;
+        margin-left: 10px !important;
+      }
+    }
+  }
+  // Filter by status container
+  .filterForm {
+    h3 {
+      font-size: 22px !important;
+      margin-top: 1px !important;
+    }
+    h4 {
+      font-size: 18px !important;
+    }
+    .resetFilter {
+      margin-top: 15px !important;
+    }
+    form {
+      label {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+      }
+      input[type='radio']:after {
+        top: -4px !important;
+      }
+      input[type='radio']:checked:after {
+        top: -4px !important;
+      }
+    }
+  }
+  // All characters
+  .post-container {
+    padding: 30px !important;
+    margin-top: 240px !important;
+    #one-profile {
+      height: 220px !important;
+      #c-info-container {
+        ul {
+          li {
+            font-size: 20px !important;
+            padding-bottom: 0 !important;
+          }
+        }
+      }
+      #c-image-container {
+        h5 {
+          font-size: 20px !important;
+        }
+        img {
+          margin-left: 0 !important;
+          height: auto !important;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  //Modal
+  .modal-place {
+    #modal-container {
+      z-index: 9999 !important;
+      height: 590px !important;
+      width: 600px !important;
+      .charInfoDisplay {
+        h3 {
+          font-size: 36px !important;
+        }
+        img {
+          height: 250px !important;
+          width: 250px !important;
+        }
+        ul {
+          li {
+            font-size: 20px !important;
+            h5 {
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Page preloader text
+  .page-loading-content h3 {
+    font-size: 50px !important;
+  }
+  .page-loading-content h4 {
+    font-size: 30px !important;
+  }
+  .text-glitch:before,
+  .text-glitch:after {
+    top: 46% !important;
+  }
+  .text-glitch-second:before,
+  .text-glitch-second:after {
+    top: 42% !important;
+  }
+  .btn-glitch:before,
+  .btn-glitch:after {
+    top: 0% !important;
+  }
+  .progress {
+    height: 10px !important;
+  }
+  .textAfterLoad {
+    margin-bottom: 35px !important;
+  }
+  .loader {
+    img {
+      transform: scale(0.8);
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  // Search container
+  #search-container {
+    .page-name {
+      h3 {
+        font-size: 40px !important;
+      }
+    }
+    .allSearchForm {
+      margin-bottom: 0 !important;
+      label {
+        font-size: 22px !important;
+      }
+      #nameInput,
+      #submitBtn {
+        font-size: 18px !important;
+      }
+      .searchedForText {
+        font-size: 18px !important;
+        margin-top: -7px !important;
+        margin-left: 10px !important;
+      }
+    }
+  }
+  // Filter by status container
+  .filterForm {
+    h3 {
+      font-size: 22px !important;
+      margin-top: 1px !important;
+    }
+    h4 {
+      font-size: 18px !important;
+    }
+    .resetFilter {
+      margin-top: 15px !important;
+    }
+    form {
+      label {
+        font-size: 18px !important;
+        margin-top: 13px !important;
+      }
+      input[type='radio']:after {
+        top: -4px !important;
+      }
+      input[type='radio']:checked:after {
+        top: -4px !important;
+      }
+    }
+  }
+  // Searching database, [not found] text
+  #apiPreload {
+    h3 {
+      font-size: 30px !important;
+    }
+  }
+  // All characters
+  .post-container {
+    padding: 30px !important;
+    margin-top: 235px !important;
+    #one-profile {
+      height: 260px !important;
+      #c-info-container {
+        ul {
+          li {
+            font-size: 20px !important;
+          }
+        }
+      }
+      #c-image-container {
+        h5 {
+          font-size: 20px !important;
+        }
+        img {
+          margin-left: 0 !important;
+          height: 180px !important;
+        }
+      }
+    }
+  }
+  //Modal
+  .modal-place {
+    #modal-container {
+      z-index: 9999 !important;
+      height: 570px !important;
+      width: 550px !important;
+      .charInfoDisplay {
+        h3 {
+          font-size: 34px !important;
+        }
+        img {
+          height: 240px !important;
+          width: 240px !important;
+        }
+        ul {
+          li {
+            font-size: 20px !important;
+            h5 {
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .loader {
+    img {
+      transform: scale(0.75);
+    }
+  }
+  // Page preloader text
+  .page-loading-content h3 {
+    font-size: 44px !important;
+  }
+  .page-loading-content h4 {
+    font-size: 26px !important;
+  }
+  .text-glitch:before,
+  .text-glitch:after {
+    top: 46% !important;
+  }
+  .text-glitch-second:before,
+  .text-glitch-second:after {
+    top: 44% !important;
+  }
+  .btn-glitch:before,
+  .btn-glitch:after {
+    top: 1% !important;
+  }
+  .progress {
+    height: 8px !important;
+  }
+  .textAfterLoad {
+    margin-bottom: 20px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  // Search container
+  #search-container {
+    .page-name {
+      h3 {
+        font-size: 36px !important;
+      }
+    }
+    .allSearchForm {
+      margin-bottom: 0 !important;
+      label {
+        font-size: 20px !important;
+      }
+      #nameInput,
+      #submitBtn {
+        font-size: 16px !important;
+      }
+      .searchedForText {
+        font-size: 16px !important;
+        margin-top: -7px !important;
+        margin-left: 10px !important;
+      }
+    }
+  }
+  // Filter by status container
+  .filterForm {
+    h3 {
+      font-size: 20px !important;
+      margin-top: 4px !important;
+    }
+    h4 {
+      font-size: 16px !important;
+    }
+    .resetFilter {
+      margin-top: 16px !important;
+      width: 90px !important;
+    }
+    form {
+      label {
+        font-size: 16px !important;
+        margin-top: 10px !important;
+      }
+      input[type='radio']:after {
+        top: -4px !important;
+      }
+      input[type='radio']:checked:after {
+        top: -4px !important;
+      }
+    }
+  }
+  // Page preloader text
+  .page-loading-content h3 {
+    font-size: 36px !important;
+  }
+  .page-loading-content h4 {
+    font-size: 22px !important;
+  }
+  .text-glitch:before,
+  .text-glitch:after {
+    top: 46% !important;
+  }
+  .text-glitch-second:before,
+  .text-glitch-second:after {
+    top: 45% !important;
+  }
+  .btn-glitch:before,
+  .btn-glitch:after {
+    top: 2% !important;
+  }
+  .progress {
+    height: 5px !important;
+  }
+  .textAfterLoad {
+    margin-bottom: 20px !important;
+  }
+
+  // All characters
+  .post-container {
+    padding: 30px !important;
+    margin-top: 230px !important;
+    #one-profile {
+      height: 240px !important;
+      #c-info-container {
+        ul {
+          li {
+            font-size: 18px !important;
+          }
+        }
+      }
+      #c-image-container {
+        h5 {
+          font-size: 18px !important;
+        }
+        img {
+          margin-left: 0 !important;
+          height: 160px !important;
+        }
+      }
+    }
+  }
+  //Modal
+  .modal-place {
+    #modal-container {
+      z-index: 9999 !important;
+      height: 510px !important;
+      width: 450px !important;
+      .charInfoDisplay {
+        h3 {
+          font-size: 30px !important;
+        }
+        img {
+          height: 200px !important;
+          width: 200px !important;
+        }
+        ul {
+          li {
+            font-size: 18px !important;
+            h5 {
+              font-size: 18px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .loader {
+    img {
+      transform: scale(0.7);
+    }
+  }
+  // Searching database, [not found] text
+  #apiPreload {
+    h3 {
+      font-size: 24px !important;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  // Search container
+  #search-container {
+    .page-name {
+      h3 {
+        font-size: 30px !important;
+      }
+    }
+    .allSearchForm {
+      margin-bottom: 0 !important;
+      label {
+        font-size: 16px !important;
+      }
+      #nameInput,
+      #submitBtn {
+        font-size: 14px !important;
+      }
+      .searchedForText {
+        font-size: 14px !important;
+        margin-top: -8px !important;
+        margin-left: 10px !important;
+      }
+    }
+  }
+  // Filter by status container
+  .filterForm {
+    h3 {
+      font-size: 16px !important;
+      margin-top: 8px !important;
+    }
+    h4 {
+      font-size: 14px !important;
+    }
+    .resetFilter {
+      margin-top: 14px !important;
+      width: 80px !important;
+    }
+    form {
+      label {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+      }
+    }
+  }
+
+  // All characters
+  .post-container {
+    padding: 30px !important;
+    margin-top: 220px !important;
+    #one-profile {
+      height: 220px !important;
+      #c-info-container {
+        ul {
+          li {
+            font-size: 16px !important;
+            padding-bottom: 5px !important;
+          }
+        }
+      }
+      #c-image-container {
+        h5 {
+          font-size: 16px !important;
+        }
+        img {
+          height: 150px !important;
+        }
+      }
+    }
+  }
+  //Modal
+  .modal-place {
+    #modal-container {
+      z-index: 9999 !important;
+      height: 460px !important;
+      width: 400px !important;
+      .charInfoDisplay {
+        h3 {
+          font-size: 26px !important;
+        }
+        img {
+          height: 180px !important;
+          width: 180px !important;
+        }
+        ul {
+          li {
+            font-size: 16px !important;
+            h5 {
+              font-size: 16px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Searching database, [not found] text
+  #apiPreload {
+    h3 {
+      font-size: 20px !important;
+    }
+  }
+  .loader {
+    img {
+      transform: scale(0.6);
+    }
+  }
+  // Page preloader text
+  .page-loading-content h3 {
+    font-size: 36px !important;
+  }
+  .page-loading-content h4 {
+    font-size: 22px !important;
+  }
+  .text-glitch:before,
+  .text-glitch:after {
+    top: 46% !important;
+  }
+  .text-glitch-second:before,
+  .text-glitch-second:after {
+    top: 45% !important;
+  }
+  .btn-glitch:before,
+  .btn-glitch:after {
+    top: 0% !important;
+  }
+  .progress {
+    height: 5px !important;
+  }
+  .textAfterLoad {
+    margin-bottom: 20px !important;
+  }
+}
+
+// Nes yra !imporant, todel nesikeicia height size pagal h3 modal name

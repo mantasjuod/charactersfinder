@@ -1,0 +1,11 @@
+// Show/hide loader for next APi data
+.loader {
+  visibility: hidden !important;
+  transform: scale(0.8);
+}
+.show-loader {
+  visibility: visible !important;
+}
+.disableFilterPress {
+  pointer-events: none;
+}
