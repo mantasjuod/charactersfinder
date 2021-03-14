@@ -449,6 +449,7 @@
       }
     }
     .allSearchForm {
+      padding-left: 0 !important;
       margin-bottom: 0 !important;
       label {
         font-size: 16px !important;
@@ -466,6 +467,8 @@
   }
   // Filter by status container
   .filterForm {
+    margin-right: 0 !important;
+    padding-right: 45px !important;
     h3 {
       font-size: 16px !important;
       margin-top: 8px !important;
@@ -559,7 +562,7 @@
   }
   .text-glitch-second:before,
   .text-glitch-second:after {
-    top: 45% !important;
+    top: 44% !important;
   }
   .btn-glitch:before,
   .btn-glitch:after {
