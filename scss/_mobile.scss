@@ -16,7 +16,7 @@
       white-space: normal;
       margin-top: 35px !important;
       h5 {
-        margin-top: -110px !important;
+        margin-top: -75px !important;
       }
     }
   }
@@ -28,10 +28,6 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  // Main page name
-  .page-name {
-    font-size: 44px !important;
-  }
   // Search database, [not found] text
   #apiPreload {
     h3 {
@@ -41,12 +37,13 @@
   // Search container
   #search-container {
     .page-name {
+      margin-bottom: -25px !important;
       h3 {
-        font-size: 40px !important;
+        font-size: 44px !important;
       }
     }
     .allSearchForm {
-      margin-bottom: 0 !important;
+      margin-bottom: -15px !important;
       label {
         font-size: 22px !important;
       }
@@ -89,7 +86,7 @@
   // All characters
   .post-container {
     padding: 30px !important;
-    margin-top: 240px !important;
+    margin-top: 200px !important;
     #one-profile {
       height: 220px !important;
       #c-info-container {
@@ -172,12 +169,13 @@
   // Search container
   #search-container {
     .page-name {
+      margin-bottom: -25px !important;
       h3 {
         font-size: 40px !important;
       }
     }
     .allSearchForm {
-      margin-bottom: 0 !important;
+      margin-bottom: -15px !important;
       label {
         font-size: 22px !important;
       }
@@ -226,7 +224,7 @@
   // All characters
   .post-container {
     padding: 30px !important;
-    margin-top: 235px !important;
+    margin-top: 190px !important;
     #one-profile {
       height: 260px !important;
       #c-info-container {
@@ -307,12 +305,13 @@
   // Search container
   #search-container {
     .page-name {
+      margin-bottom: -25px !important;
       h3 {
         font-size: 36px !important;
       }
     }
     .allSearchForm {
-      margin-bottom: 0 !important;
+      margin-bottom: -15px !important;
       label {
         font-size: 20px !important;
       }
@@ -382,7 +381,7 @@
   // All characters
   .post-container {
     padding: 30px !important;
-    margin-top: 230px !important;
+    margin-top: 170px !important;
     #one-profile {
       height: 240px !important;
       #c-info-container {
@@ -444,13 +443,14 @@
   // Search container
   #search-container {
     .page-name {
+      margin-bottom: -25px !important;
       h3 {
         font-size: 24px !important;
       }
     }
     .allSearchForm {
       padding-left: 0 !important;
-      margin-bottom: 0 !important;
+      margin-bottom: -16px !important;
       label {
         font-size: 16px !important;
       }
@@ -491,7 +491,7 @@
   // All characters
   .post-container {
     padding: 30px !important;
-    margin-top: 220px !important;
+    margin-top: 150px !important;
     #one-profile {
       height: 220px !important;
       #c-info-container {
