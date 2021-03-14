@@ -9,35 +9,43 @@ var initializingDone = document.querySelector('.textAfterLoad');
 var progressBar = document.querySelector('.progress-bar');
 var progress = document.querySelector('.progress');
 var enterBtn = document.querySelector('.enter-btn');
-var count = 0;
-var per = 0;
-var loading = setInterval(animateLoader, 30);
-function animateLoader() {
-    if (count === 100) {
-        initializing.classList.remove('text-blink');
-        clearInterval(loading);
-        initializing.classList.add('text-disappear');
-        progressBar.classList.add('text-disappear');
-        initializing.style.visibility = 'none';
-        setTimeout(function () {
-            initializing.style.display = 'none';
-            progressBar.style.display = 'none';
-            initializingDone.style.display = 'block';
-            enterBtn.style.display = 'inline';
-            setTimeout(function () {
-                enterBtn.style.opacity = '1';
-                setTimeout(function () {
-                    enterBtn.classList.add('enter-btn-blink');
-                }, 500);
-            }, 500);
-        }, 1000);
-    }
-    else {
-        count += 1;
-        per += 5;
-        progress.style.width = per + 'px';
-    }
-}
+// let count: number = 0;
+// let per: number = 0;
+// let loading = setInterval(animateLoader, 30);
+// function animateLoader() {
+//   if (count === 100) {
+//     initializing.classList.remove('text-blink');
+//     clearInterval(loading);
+//     initializing.classList.add('text-disappear');
+//     progressBar.classList.add('text-disappear');
+//     initializing.style.visibility = 'none';
+//     setTimeout(() => {
+//       initializing.style.display = 'none';
+//       progressBar.style.display = 'none';
+//       initializingDone.style.display = 'block';
+//       enterBtn.style.display = 'inline';
+//       setTimeout(() => {
+//         enterBtn.style.opacity = '1';
+//         setTimeout(() => {
+//           enterBtn.classList.add('enter-btn-blink');
+//         }, 500);
+//       }, 500);
+//     }, 1000);
+//   } else {
+//     count += 1;
+//     per += 5;
+//     progress.style.width = per + 'px';
+//   }
+// }
+initializingDone.style.display = 'inline';
+enterBtn.style.display = 'inline';
+setTimeout(function () {
+    enterBtn.style.opacity = '1';
+    initializingDone.style.opacity = '1';
+    setTimeout(function () {
+        enterBtn.classList.add('enter-btn-blink');
+    }, 500);
+}, 1000);
 var allPageLoader = document.querySelector('.page-loading');
 enterBtn.addEventListener('click', function () {
     allPageLoader.style.display = 'none';
