@@ -195,7 +195,7 @@ function callCharactersFunction(): void {
 window.addEventListener('scroll', () => {
   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
   if (
-    clientHeight + scrollTop >= scrollHeight - 30 &&
+    clientHeight + scrollTop >= scrollHeight - 80 &&
     scrollHeight >= 4000 &&
     scrollHeight !== clientHeight &&
     allDataLoaded === false

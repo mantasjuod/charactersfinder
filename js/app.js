@@ -177,7 +177,7 @@ function callCharactersFunction() {
 // Check if page bottom reached to call API again
 window.addEventListener('scroll', function () {
     var _a = document.documentElement, scrollTop = _a.scrollTop, scrollHeight = _a.scrollHeight, clientHeight = _a.clientHeight;
-    if (clientHeight + scrollTop >= scrollHeight - 30 &&
+    if (clientHeight + scrollTop >= scrollHeight - 80 &&
         scrollHeight >= 4000 &&
         scrollHeight !== clientHeight &&
         allDataLoaded === false) {
