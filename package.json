@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://mantasjuod.github.io/charactersfinder"
+  "homepage": "https://mantasjuod.github.io/charactersfinder",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
