@@ -445,7 +445,7 @@
   #search-container {
     .page-name {
       h3 {
-        font-size: 30px !important;
+        font-size: 24px !important;
       }
     }
     .allSearchForm {
@@ -513,8 +513,8 @@
   .modal-place {
     #modal-container {
       z-index: 9999 !important;
-      height: 460px !important;
-      width: 400px !important;
+      height: 485px !important;
+      width: 320px !important;
       .charInfoDisplay {
         h3 {
           font-size: 26px !important;
@@ -536,6 +536,7 @@
   }
   // Searching database, [not found] text
   #apiPreload {
+    width: 350px !important;
     h3 {
       font-size: 20px !important;
     }

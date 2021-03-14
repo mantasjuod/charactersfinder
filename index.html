@@ -25,7 +25,8 @@
     <title>Search API Engine</title>
   </head>
   <body>
-    <div class="page-loading">
+    <div class="global">
+      <!-- <div class="page-loading">
       <div class="page-loading-content col-12">
         <h3
           class="initializing text-blink text-glitch"
@@ -46,117 +47,121 @@
           <div class="progress"></div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid" id="search-container">
-      <div class="row d-flex flex-row">
-        <div class="col-5 col-xl-3 mr-auto allSearchForm">
-          <form id="form">
-            <div class="form-group">
-              <label
-                for="nameInput search-glitch"
-                data-text="[search for episode character]"
-                >[search for episodes character]</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="nameInput"
-                placeholder="try rick, elon, summer, morty..."
-                autocomplete="off"
-                maxlength="30"
-                pattern="^[a-zA-Z0-9 ]+$"
-              />
-            </div>
-            <div class="form-row flex-nowrap">
+    </div> -->
+      <div class="container-fluid" id="search-container">
+        <div class="row d-flex flex-row">
+          <div class="col-6 col-xl-3 allSearchForm p-0">
+            <form id="form">
               <div class="form-group">
+                <label
+                  for="nameInput search-glitch"
+                  data-text="[search for episode character]"
+                  >[search for episodes character]</label
+                >
                 <input
-                  type="submit"
+                  type="text"
                   class="form-control"
-                  value="[get info]"
-                  type="submit"
-                  id="submitBtn"
+                  id="nameInput"
+                  placeholder="try rick, elon, summer, morty..."
+                  autocomplete="off"
+                  maxlength="30"
+                  pattern="^[a-zA-Z0-9 ]+$"
                 />
               </div>
-              <h4 class="searchedForText"></h4>
-            </div>
-          </form>
-        </div>
-        <div class="col-8 offset-2 col-xl-5 offset-xl-0 page-name">
-          <h3 class="name-glitch" data-text="Rick and Morty characters finder">
-            Rick And Morty Characters Finder
-          </h3>
-        </div>
-        <div class="col-5 col-xl-3 ml-auto filterForm">
-          <div class="row d-flex flex-column makeFixed">
-            <a href="https://rickandmortyapi.com/about"><h5>Copyright</h5></a>
-            <h3>[filter character]</h3>
-            <form class="form-inline">
-              <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="aliveID"
-                  value="alive"
-                />
-                <label class="form-check-label" for="aliveID">alive&nbsp;</label
-                >&nbsp;
-              </div>
-              <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="deadID"
-                  value="dead"
-                />
-                <label class="form-check-label" for="deadID">dead&nbsp;</label
-                >&nbsp;
-              </div>
-              <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="unknownID"
-                  value="unknown"
-                />
-                <label class="form-check-label" for="unknownID">
-                  unknown
-                </label>
+              <div class="form-row flex-nowrap">
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    class="form-control"
+                    value="[get info]"
+                    type="submit"
+                    id="submitBtn"
+                  />
+                </div>
+                <h4 class="searchedForText"></h4>
               </div>
             </form>
-            <h4 class="resetFilter ml-auto">[reset filter]</h4>
+          </div>
+          <div class="col-12 col-xl-5 page-name">
+            <h3
+              class="name-glitch"
+              data-text="Rick and Morty Characters Finder"
+            >
+              Rick And Morty Characters Finder
+            </h3>
+          </div>
+          <div class="col-6 col-xl-3 ml-auto filterForm">
+            <div class="row d-flex flex-column makeFixed">
+              <a href="https://rickandmortyapi.com/about"><h5>Copyright</h5></a>
+              <h3>[filter character]</h3>
+              <form class="form-inline">
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="aliveID"
+                    value="alive"
+                  />
+                  <label class="form-check-label" for="aliveID"
+                    >alive&nbsp;</label
+                  >&nbsp;
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="deadID"
+                    value="dead"
+                  />
+                  <label class="form-check-label" for="deadID">dead&nbsp;</label
+                  >&nbsp;
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="unknownID"
+                    value="unknown"
+                  />
+                  <label class="form-check-label" for="unknownID">
+                    unknown
+                  </label>
+                </div>
+              </form>
+              <h4 class="resetFilter ml-auto">[reset filter]</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-place">
+        <div class="container" id="modal-container">
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column charInfoDisplay innerModal"
+              id="charInfo"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="main-container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap post-container"></div>
+          <div class="d-flex mx-auto loader">
+            <img src="images/Spinner-1.4s-104px (1).gif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container" id="apiPreload">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center justify-content-center">
+            <h3 class="searchingText text-blink">Searching in database...</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal-place">
-      <div class="container" id="modal-container">
-        <div class="row">
-          <div
-            class="col-12 d-flex flex-column charInfoDisplay innerModal"
-            id="charInfo"
-          ></div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid" id="main-container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap post-container"></div>
-        <div class="d-flex mx-auto loader">
-          <img src="images/Spinner-1.4s-104px (1).gif" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="container" id="apiPreload">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <h3 class="searchingText text-blink">Searching in database...</h3>
-        </div>
-      </div>
-    </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
